@@ -13,6 +13,8 @@
 		21570BA220CF488800D7EE0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21570BA120CF488800D7EE0B /* Assets.xcassets */; };
 		21570BA520CF488800D7EE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21570BA320CF488800D7EE0B /* LaunchScreen.storyboard */; };
 		21570BA820CF488800D7EE0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21570BA720CF488800D7EE0B /* main.m */; };
+		21570BB320CF50BC00D7EE0B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 21570BB220CF50BC00D7EE0B /* Player.m */; };
+		21570BB620CF515B00D7EE0B /* GameLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 21570BB520CF515B00D7EE0B /* GameLogic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		21570BA420CF488800D7EE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21570BA620CF488800D7EE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21570BA720CF488800D7EE0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21570BB120CF50BC00D7EE0B /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Player.h; path = "Two Player Math Game/Model/Player.h"; sourceTree = SOURCE_ROOT; };
+		21570BB220CF50BC00D7EE0B /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = "Two Player Math Game/Model/Player.m"; sourceTree = SOURCE_ROOT; };
+		21570BB420CF515B00D7EE0B /* GameLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameLogic.h; sourceTree = "<group>"; };
+		21570BB520CF515B00D7EE0B /* GameLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameLogic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,45 @@
 		21570B9720CF488600D7EE0B /* Two Player Math Game */ = {
 			isa = PBXGroup;
 			children = (
-				21570B9820CF488600D7EE0B /* AppDelegate.h */,
-				21570B9920CF488600D7EE0B /* AppDelegate.m */,
-				21570B9B20CF488600D7EE0B /* ViewController.h */,
-				21570B9C20CF488600D7EE0B /* ViewController.m */,
-				21570B9E20CF488600D7EE0B /* Main.storyboard */,
+				21570BB020CF48B900D7EE0B /* Controller */,
+				21570BAE20CF48A800D7EE0B /* Model */,
+				21570BAF20CF48B500D7EE0B /* View */,
 				21570BA120CF488800D7EE0B /* Assets.xcassets */,
-				21570BA320CF488800D7EE0B /* LaunchScreen.storyboard */,
 				21570BA620CF488800D7EE0B /* Info.plist */,
 				21570BA720CF488800D7EE0B /* main.m */,
 			);
 			path = "Two Player Math Game";
+			sourceTree = "<group>";
+		};
+		21570BAE20CF48A800D7EE0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21570BB420CF515B00D7EE0B /* GameLogic.h */,
+				21570BB520CF515B00D7EE0B /* GameLogic.m */,
+				21570BB120CF50BC00D7EE0B /* Player.h */,
+				21570BB220CF50BC00D7EE0B /* Player.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21570BAF20CF48B500D7EE0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21570B9E20CF488600D7EE0B /* Main.storyboard */,
+				21570BA320CF488800D7EE0B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21570BB020CF48B900D7EE0B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21570B9B20CF488600D7EE0B /* ViewController.h */,
+				21570B9C20CF488600D7EE0B /* ViewController.m */,
+				21570B9820CF488600D7EE0B /* AppDelegate.h */,
+				21570B9920CF488600D7EE0B /* AppDelegate.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21570BB320CF50BC00D7EE0B /* Player.m in Sources */,
 				21570B9D20CF488600D7EE0B /* ViewController.m in Sources */,
+				21570BB620CF515B00D7EE0B /* GameLogic.m in Sources */,
 				21570BA820CF488800D7EE0B /* main.m in Sources */,
 				21570B9A20CF488600D7EE0B /* AppDelegate.m in Sources */,
 			);
